@@ -2,18 +2,17 @@
 
 int main() {
   // Instanciation avec 2 constructeurs différents
-  Point point0;
   Point point1(14.0, 10.0);
+  Point point1bis(point1);
 
   // Affiche les coordonnées des 2 points
-  point0.affiche();
   point1.affiche();
+  point1bis.affiche();
 
-  // Translate et Affiche le point 1
-  point1.translater(1.0, 1.0);
-  point1.affiche();
+  point1bis.setX(3.0);
+  point1bis.setY(7.0);
+  point1bis.affiche();
 
-  // Translate et Affiche le point 0
-  point0.translater(10.0, 10.0);
-  point0.affiche();
+  point1bis.translater(point1);
+  point1bis.affiche();
 }
