@@ -12,4 +12,8 @@ int main() {
   // Translate et Affiche le point 1
   point1.translater(1.0, 1.0);
   point1.affiche();
+
+  // Translate et Affiche le point 0
+  point0.translater(10.0, 10.0);
+  point0.affiche();
 }
