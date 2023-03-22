@@ -3,16 +3,12 @@
 int main() {
   // Instanciation avec 2 constructeurs différents
   Point point1(14.0, 10.0);
-  Point point1bis(point1);
+  Point point2(4.0,6.0);
 
   // Affiche les coordonnées des 2 points
-  point1.affiche();
-  point1bis.affiche();
+  cout<<point1<<endl;
+  cout<<point2<<endl;
 
-  point1bis.setX(3.0);
-  point1bis.setY(7.0);
-  point1bis.affiche();
-
-  point1bis.translater(point1);
-  point1bis.affiche();
+  point1+=point2;
+  cout<<point1<<endl;
 }
