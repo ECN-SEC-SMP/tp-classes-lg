@@ -1,12 +1,14 @@
 #include "Point.h"
 
-class Forme : public Point {
+class Forme {
   private:
     Point p;    
 
   public:
-    Forme(const Point _p);
-    void operator+=(Forme const& _f);
+    Forme();
+    Forme(float _x, float _y);
+    Forme(Point _p);
+    void operator+=(Point const& _p);
     virtual float perimetre()=0;
     virtual float surface()=0;
 };

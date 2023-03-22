@@ -1,13 +1,12 @@
 #include "Forme.h"
 
-class Rectangle {
+class Rectangle : public Forme {
 private:
   float lx;
   float ly;
 
 public:
-  Rectangle();
-  Rectangle(float _lx, float _ly);
+  Rectangle(Point _p, float _lx, float _ly);
   Rectangle(const Rectangle &_r);
   float getLx() const;
   float getLy() const;
@@ -15,4 +14,4 @@ public:
   void setLy(float _ly);
 };
 
-ostream &operator<<(ostream &s, Point const &_point);
+ostream &operator<<(ostream &s, Rectangle const &_rect);

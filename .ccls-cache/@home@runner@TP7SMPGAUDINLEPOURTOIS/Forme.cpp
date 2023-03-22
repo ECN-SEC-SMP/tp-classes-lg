@@ -1,15 +1,12 @@
 #include "Forme.h"
 
-Forme::Forme(const Point _p) : Point() {
-  p = _p;
+Forme::Forme() { p = Point(); }
+
+Forme::Forme(float _x, float _y) { p = Point(_x, _y); }
+
+Forme::Forme(Point _p) { p = _p; }
+
+void Forme::operator+=(Point const& _p) {
+  p += _p;
 }
 
-ostream &operator<<(ostream &s, Forme const &_f) {
-  s << _f.getX() << " ; " << _f.getY();
-  return s;
-}
-
-void Forme::operator+=(Forme const& _f){
-  this->p.setX(p.getX() + _f.getX());
-  this->p.setY(p.getY() + _f.getY());
-}
