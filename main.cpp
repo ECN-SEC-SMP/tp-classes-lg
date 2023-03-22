@@ -15,4 +15,6 @@ int main() {
 
   point1bis.translater(point1);
   point1bis.affiche();
+
+  //
 }
