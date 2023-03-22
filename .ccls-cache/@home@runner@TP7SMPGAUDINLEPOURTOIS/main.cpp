@@ -21,4 +21,7 @@ int main() {
   rect1.setLy(1.0);
 
   cout << rect1 << endl;
+
+  cout << "Perimetre : " << rect1.perimetre() << endl;
+  cout << "Aire : " << rect1.surface() << endl;
 }

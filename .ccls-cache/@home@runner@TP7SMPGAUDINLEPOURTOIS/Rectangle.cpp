@@ -5,10 +5,6 @@ Rectangle::Rectangle(Point _p, float _lx, float _ly) : Forme(_p) {
   ly = _ly;
 }
 
-Rectangle::Rectangle(Rectangle const &_r) : lx(_r.lx), ly(_r.ly) {
-  cout << "copie du Rectangle" << endl;
-}
-
 float Rectangle::getLx() const { return lx; }
 
 float Rectangle::getLy() const { return ly; }

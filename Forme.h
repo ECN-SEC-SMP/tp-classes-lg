@@ -8,6 +8,7 @@ class Forme {
     Forme();
     Forme(float _x, float _y);
     Forme(Point _p);
+    Forme(Forme const& _f);
     void operator+=(Point const& _p);
     virtual float perimetre()=0;
     virtual float surface()=0;
