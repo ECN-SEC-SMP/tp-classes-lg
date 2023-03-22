@@ -12,6 +12,8 @@ public:
   float getLy() const;
   void setLx(float _lx);
   void setLy(float _ly);
+  virtual float perimetre();
+  virtual float surface();
 };
 
 ostream &operator<<(ostream &s, Rectangle const &_rect);
